@@ -15,9 +15,9 @@ This project explores the use of data mining methodology, specifically SEMMA (Sa
 
 This dataset contains household-level transactions over two years from a group of 2,500 households who are frequent shoppers at a retailer. 
 
-1. Transaction Table - _contains all products purchased by households within the dataset_
-2. Household Demographic Table - _provides a representation of demographic information for a portion of households_
-3. Product Table - _contains information on each product sold such as department of product, product manufacturer and a brand identifier_
+1. Transaction Table (transaction_data) - _contains all products purchased by households within the dataset_
+2. Household Demographic Table (hh_demographic) - _provides a representation of demographic information for a portion of households_
+3. Product Table (product) - _contains information on each product sold such as department of product, product manufacturer and a brand identifier_
    
 ## Key Tools
 
