@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project explores the use of data mining methodology, specifically SEMMA (Sample, Explore, Modify, Model and Access), to real-world retail data.
+This project explores the use of data mining methodology, specifically SEMMA (Sample, Explore, Modify, Model and Access), to real-world retail data from dunnhumby.
 
 ## Objectives
 
@@ -12,6 +12,8 @@ This project explores the use of data mining methodology, specifically SEMMA (Sa
 4. To enhance sales strategies by developing predictive models for estimating basket sales values.
 
 ## Dataset Components
+
+This dataset contains household-level transactions over two years from a group of 2,500 households who are frequent shoppers at a retailer. 
 
 1. Transaction Table - contains all products purchased by households within the dataset
 2. Household Demographic Table - provides a representation of demographic information for a portion of households
