@@ -46,7 +46,7 @@ KNIME contributes to the exploratory phase, providing additional capabilities fo
 3. Time Series Clustering
 4. DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
 
-## Modeling
+### Modeling
 
 1. Decision Trees
 2. Random Forests
