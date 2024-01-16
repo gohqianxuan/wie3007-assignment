@@ -15,9 +15,9 @@ This project explores the use of data mining methodology, specifically SEMMA (Sa
 
 This dataset contains household-level transactions over two years from a group of 2,500 households who are frequent shoppers at a retailer. 
 
-1. Transaction Table - contains all products purchased by households within the dataset
-2. Household Demographic Table - provides a representation of demographic information for a portion of households
-3. Product Table - contains information on each product sold such as department of product, product manufacturer and a brand identifier
+1. Transaction Table - _contains all products purchased by households within the dataset_
+2. Household Demographic Table - _provides a representation of demographic information for a portion of households_
+3. Product Table - _contains information on each product sold such as department of product, product manufacturer and a brand identifier_
    
 ## Key Tools
 
@@ -44,7 +44,7 @@ KNIME contributes to the exploratory phase, providing additional capabilities fo
 1. Association Rule Mining
 2. Sequence Analysis
 3. Time Series Clustering
-4. DBSCAN (utilizing KNIME)
+4. DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
 
 ## Modeling
 
