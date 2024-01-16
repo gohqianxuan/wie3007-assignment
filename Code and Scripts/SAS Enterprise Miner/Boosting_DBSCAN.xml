@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?><_ROOT_ EMVERSION="15.2" ORIENTATION="HORIZONTAL">
+<Workspace>
+<NODES>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="Boost" ID="Boost" X="842" Y="296" DESCRIPTION="Boosting - Best Fit" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Boost">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMMODL.BOOST.SOURCE" ToolType="MODEL" Iterations="35" CategoricalBins="30" IntervalBins="100" TrainProportion="60" Seed="12345" Shrinkage="0.1" LeafFraction="0.001" SplitSize="." MinCatSize="5" MaxBranch="15" MaxDepth="50" NSurrs="0" Missing="USEINSEARCH" Huber="NO" ReUseVar="1" AssessMeasure="PROFIT" NodeSize="20000" Exhaustive="5000" VarSelection="Y" Performance="DISK" SubSeries="BEST" IterationNum="1" ObsImportance="N" NumSingleImp="5" CreateHStat="N" ForceRun="N" RunAction="Train" Component="Boost" Precision="0" Measure="PROFIT" NumPairImp="0" DataNeeded="Y">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="Cluster" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="_dataobs_" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="basket_discount" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="basket_id" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="date_time" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="discount" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_MEAN_transaction_baske" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="household_MIN_transaction_basket" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="household_age_desc" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="household_hh_comp_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_homeowner_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_household_size_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_income_desc" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="household_key" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_kid_category_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_marital_status_code" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="product_MEAN_transaction_basket_" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="product_brand" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_commodity_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_department" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_id" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_manufacturer" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_sub_commodity_desc" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="quantity" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="sales_value" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="store_id" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="week_no" AttributeName="USE" AttributeValue="Y"/>
+</EmVariableAttributes>
+<EmTargetAttributes>
+<basket_sales_value>
+<DecData Table="EMWS2.Boost_basket_sales_val_DD">
+<Data>
+<Obs BASKET_SALES_VALUE="0.01"/>
+<Obs BASKET_SALES_VALUE="552.92"/>
+<Obs BASKET_SALES_VALUE="85.598253607"/>
+</Data>
+<Metadata>
+<Variable NAME="basket_sales_value" LABEL="" LENGTH="8" FORMAT="" TYPE="N"/>
+</Metadata>
+</DecData>
+<DecMeta Table="EMWS2.Boost_basket_sales_val_DM">
+<Data>
+<Obs _TYPE_="MATRIX" VARIABLE="" LABEL="" FORMAT="" LEVEL="PROFIT" TYPE="" COST="" USE="N" MIN="." MEAN="." MAX="."/>
+<Obs _TYPE_="TARGET" VARIABLE="basket_sales_value" LABEL="" FORMAT="BEST12.0" LEVEL="INTERVAL" TYPE="N" COST="" USE="" MIN="0.01" MEAN="85.598253607" MAX="552.92"/>
+<Obs _TYPE_="PREDICTED" VARIABLE="P_basket_sales_value" LABEL="Predicted: basket_sales_value" FORMAT="" LEVEL="" TYPE="N" COST="" USE="" MIN="." MEAN="." MAX="."/>
+<Obs _TYPE_="RESIDUAL" VARIABLE="R_basket_sales_value" LABEL="Residual: basket_sales_value" FORMAT="" LEVEL="" TYPE="N" COST="" USE="" MIN="." MEAN="." MAX="."/>
+</Data>
+<Metadata>
+<Variable NAME="_TYPE_" LABEL="Type" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="VARIABLE" LABEL="Variable" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="LABEL" LABEL="Label" LENGTH="256" FORMAT="" TYPE="C"/>
+<Variable NAME="FORMAT" LABEL="Format" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="LEVEL" LABEL="Measurement Level" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="TYPE" LABEL="Type" LENGTH="1" FORMAT="" TYPE="C"/>
+<Variable NAME="COST" LABEL="Cost" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="USE" LABEL="Use" LENGTH="1" FORMAT="" TYPE="C"/>
+<Variable NAME="MIN" LABEL="Minimum" LENGTH="8" FORMAT="" TYPE="N"/>
+<Variable NAME="MEAN" LABEL="Mean" LENGTH="8" FORMAT="" TYPE="N"/>
+<Variable NAME="MAX" LABEL="Maximum" LENGTH="8" FORMAT="" TYPE="N"/>
+</Metadata>
+</DecMeta>
+</basket_sales_value>
+</EmTargetAttributes>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="Boost" ID="Boost2" X="842" Y="229" DESCRIPTION="Boosting - Underfit" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Boost">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMMODL.BOOST.SOURCE" ToolType="MODEL" Iterations="10" CategoricalBins="10" IntervalBins="50" TrainProportion="60" Seed="12345" Shrinkage="0.1" LeafFraction="0.001" SplitSize="." MinCatSize="500" MaxBranch="2" MaxDepth="5" NSurrs="0" Missing="USEINSEARCH" Huber="NO" ReUseVar="1" AssessMeasure="PROFIT" NodeSize="20000" Exhaustive="5000" VarSelection="Y" Performance="DISK" SubSeries="BEST" IterationNum="1" ObsImportance="N" NumSingleImp="5" CreateHStat="N" ForceRun="N" RunAction="Train" Component="Boost" Precision="0" Measure="PROFIT" NumPairImp="0" DataNeeded="Y">
+<VariableProperties/>
+<EmTargetAttributes>
+<basket_sales_value>
+<DecData Table="EMWS2.Boost2_basket_sales_val_DD">
+<Data>
+<Obs BASKET_SALES_VALUE="0.01"/>
+<Obs BASKET_SALES_VALUE="552.92"/>
+<Obs BASKET_SALES_VALUE="85.598253607"/>
+</Data>
+<Metadata>
+<Variable NAME="basket_sales_value" LABEL="" LENGTH="8" FORMAT="" TYPE="N"/>
+</Metadata>
+</DecData>
+<DecMeta Table="EMWS2.Boost2_basket_sales_val_DM">
+<Data>
+<Obs _TYPE_="MATRIX" VARIABLE="" LABEL="" FORMAT="" LEVEL="PROFIT" TYPE="" COST="" USE="N" MIN="." MEAN="." MAX="."/>
+<Obs _TYPE_="TARGET" VARIABLE="basket_sales_value" LABEL="" FORMAT="BEST12.0" LEVEL="INTERVAL" TYPE="N" COST="" USE="" MIN="0.01" MEAN="85.598253607" MAX="552.92"/>
+<Obs _TYPE_="PREDICTED" VARIABLE="P_basket_sales_value" LABEL="Predicted: basket_sales_value" FORMAT="" LEVEL="" TYPE="N" COST="" USE="" MIN="." MEAN="." MAX="."/>
+<Obs _TYPE_="RESIDUAL" VARIABLE="R_basket_sales_value" LABEL="Residual: basket_sales_value" FORMAT="" LEVEL="" TYPE="N" COST="" USE="" MIN="." MEAN="." MAX="."/>
+</Data>
+<Metadata>
+<Variable NAME="_TYPE_" LABEL="Type" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="VARIABLE" LABEL="Variable" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="LABEL" LABEL="Label" LENGTH="256" FORMAT="" TYPE="C"/>
+<Variable NAME="FORMAT" LABEL="Format" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="LEVEL" LABEL="Measurement Level" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="TYPE" LABEL="Type" LENGTH="1" FORMAT="" TYPE="C"/>
+<Variable NAME="COST" LABEL="Cost" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="USE" LABEL="Use" LENGTH="1" FORMAT="" TYPE="C"/>
+<Variable NAME="MIN" LABEL="Minimum" LENGTH="8" FORMAT="" TYPE="N"/>
+<Variable NAME="MEAN" LABEL="Mean" LENGTH="8" FORMAT="" TYPE="N"/>
+<Variable NAME="MAX" LABEL="Maximum" LENGTH="8" FORMAT="" TYPE="N"/>
+</Metadata>
+</DecMeta>
+</basket_sales_value>
+</EmTargetAttributes>
+<EmVariableAttributes>
+<DELTA Variable="Cluster" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="_dataobs_" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="basket_discount" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="basket_id" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="date_time" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="discount" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_MEAN_transaction_baske" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="household_MIN_transaction_basket" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="household_age_desc" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="household_hh_comp_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_homeowner_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_household_size_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_income_desc" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="household_key" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_kid_category_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_marital_status_code" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="product_MEAN_transaction_basket_" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="product_brand" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_commodity_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_department" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_id" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_manufacturer" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_sub_commodity_desc" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="quantity" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="sales_value" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="store_id" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="week_no" AttributeName="USE" AttributeValue="Y"/>
+</EmVariableAttributes>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="Boost" ID="Boost3" X="844" Y="355" DESCRIPTION="Boosting - Overfit" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Boost">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMMODL.BOOST.SOURCE" ToolType="MODEL" Iterations="60" CategoricalBins="50" IntervalBins="120" TrainProportion="60" Seed="12345" Shrinkage="0.1" LeafFraction="0.001" SplitSize="." MinCatSize="1" MaxBranch="35" MaxDepth="50" NSurrs="0" Missing="USEINSEARCH" Huber="NO" ReUseVar="1" AssessMeasure="PROFIT" NodeSize="20000" Exhaustive="5000" VarSelection="Y" Performance="DISK" SubSeries="BEST" IterationNum="1" ObsImportance="N" NumSingleImp="5" CreateHStat="N" ForceRun="N" RunAction="Train" Component="Boost" Precision="0" Measure="PROFIT" NumPairImp="0" DataNeeded="Y">
+<VariableProperties/>
+<EmTargetAttributes>
+<basket_sales_value>
+<DecData Table="EMWS2.Boost3_basket_sales_val_DD">
+<Data>
+<Obs BASKET_SALES_VALUE="0.01"/>
+<Obs BASKET_SALES_VALUE="552.92"/>
+<Obs BASKET_SALES_VALUE="85.598253607"/>
+</Data>
+<Metadata>
+<Variable NAME="basket_sales_value" LABEL="" LENGTH="8" FORMAT="" TYPE="N"/>
+</Metadata>
+</DecData>
+<DecMeta Table="EMWS2.Boost3_basket_sales_val_DM">
+<Data>
+<Obs _TYPE_="MATRIX" VARIABLE="" LABEL="" FORMAT="" LEVEL="PROFIT" TYPE="" COST="" USE="N" MIN="." MEAN="." MAX="."/>
+<Obs _TYPE_="TARGET" VARIABLE="basket_sales_value" LABEL="" FORMAT="BEST12.0" LEVEL="INTERVAL" TYPE="N" COST="" USE="" MIN="0.01" MEAN="85.598253607" MAX="552.92"/>
+<Obs _TYPE_="PREDICTED" VARIABLE="P_basket_sales_value" LABEL="Predicted: basket_sales_value" FORMAT="" LEVEL="" TYPE="N" COST="" USE="" MIN="." MEAN="." MAX="."/>
+<Obs _TYPE_="RESIDUAL" VARIABLE="R_basket_sales_value" LABEL="Residual: basket_sales_value" FORMAT="" LEVEL="" TYPE="N" COST="" USE="" MIN="." MEAN="." MAX="."/>
+</Data>
+<Metadata>
+<Variable NAME="_TYPE_" LABEL="Type" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="VARIABLE" LABEL="Variable" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="LABEL" LABEL="Label" LENGTH="256" FORMAT="" TYPE="C"/>
+<Variable NAME="FORMAT" LABEL="Format" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="LEVEL" LABEL="Measurement Level" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="TYPE" LABEL="Type" LENGTH="1" FORMAT="" TYPE="C"/>
+<Variable NAME="COST" LABEL="Cost" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="USE" LABEL="Use" LENGTH="1" FORMAT="" TYPE="C"/>
+<Variable NAME="MIN" LABEL="Minimum" LENGTH="8" FORMAT="" TYPE="N"/>
+<Variable NAME="MEAN" LABEL="Mean" LENGTH="8" FORMAT="" TYPE="N"/>
+<Variable NAME="MAX" LABEL="Maximum" LENGTH="8" FORMAT="" TYPE="N"/>
+</Metadata>
+</DecMeta>
+</basket_sales_value>
+</EmTargetAttributes>
+<EmVariableAttributes>
+<DELTA Variable="Cluster" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="_dataobs_" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="basket_discount" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="basket_id" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="date_time" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="discount" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_MEAN_transaction_baske" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="household_MIN_transaction_basket" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="household_age_desc" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="household_hh_comp_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_homeowner_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_household_size_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_income_desc" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="household_key" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_kid_category_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="household_marital_status_code" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="product_MEAN_transaction_basket_" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="product_brand" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_commodity_desc" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_department" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_id" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_manufacturer" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="product_sub_commodity_desc" AttributeName="USE" AttributeValue="Y"/>
+<DELTA Variable="quantity" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="sales_value" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="store_id" AttributeName="USE" AttributeValue="N"/>
+<DELTA Variable="week_no" AttributeName="USE" AttributeValue="Y"/>
+</EmVariableAttributes>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMDFY.EMDROP.CLASS" COMPONENT="Drop" ID="Drop" X="491" Y="296" DESCRIPTION="Drop" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODIFY" TOOLPREFIX="Drop">
+<PROPERTIES DropFromTable="Y" DropHidden="Y" DropInput="N" DropTarget="N" DropRejected="Y" DropAssess="N" DropPredict="N" DropFreq="N" DropClassification="N" DropResidual="N" DropOther="N" ForceRun="N" RunAction="Train" Component="Drop">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="AGE_DESC" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="AGE_DESC__to_number_" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="HH_COMP_DESC" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="HH_COMP_DESC__to_number_" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="HOMEOWNER_DESC" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="HOMEOWNER_DESC__to_number_" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="HOUSEHOLD_SIZE_DESC" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="HOUSEHOLD_SIZE_DESC__to_number_" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="INCOME_DESC" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="INCOME_DESC__to_number_" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="KID_CATEGORY_DESC" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="KID_CATEGORY_DESC__to_number_" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="MARITAL_STATUS_CODE" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="MARITAL_STATUS_CODE__to_number_" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="PCA_dimension_0" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="PCA_dimension_1" AttributeName="DROP" AttributeValue="Y"/>
+<DELTA Variable="PCA_dimension_2" AttributeName="DROP" AttributeValue="Y"/>
+</EmVariableAttributes>
+<EmTargetAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="FileImport" ID="FIMPORT" X="123" Y="240" DESCRIPTION="DBSCAN Cluster" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="SAMPLE" TOOLPREFIX="FIMPORT">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMSAMP.Fimport.SOURCE" ImportType="Local" GuessRows="500" Delimiter="," NameRow="Y" SkipRows="0" MaxRows="1000000" MaxCols="10000" FileType="csv" Role="TRAIN" ForceRun="N" Summarize="N" AdvancedAdvisor="N" RunAction="Train" Component="FileImport" IFileName="C:\Users\User\OneDrive - Universiti Malaya\Y3S1\WIE3007\Assignments\dbscan_customer.csv" AccessTable="NoTableName" UserID="NoUserID" Password="NoPassword">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="household_key" AttributeName="ROLE" AttributeValue="ID"/>
+<DELTA Variable="household_key" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+</EmVariableAttributes>
+<EmTargetAttributes/>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<VARIABLESETDELTA Type="EXTERNAL" Extension="txt">
+<Data><![CDATA[
+if NAME=&quot;household_key&quot; then do;
+ROLE=&quot;ID&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+]]>
+</Data>
+</VARIABLESETDELTA>
+<DELTACODE Type="EXTERNAL" Extension="txt">
+<Data><![CDATA[
+if NAME=&quot;household_key&quot; then do;
+ROLE=&quot;ID&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+end;
+drop DROP;
+]]>
+</Data>
+</DELTACODE>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="FileImport" ID="FIMPORT2" X="120" Y="346" DESCRIPTION="Dataset" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="SAMPLE" TOOLPREFIX="FIMPORT">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMSAMP.Fimport.SOURCE" ImportType="Local" GuessRows="500" Delimiter="," NameRow="Y" SkipRows="0" MaxRows="1000000" MaxCols="10000" FileType="csv" Role="TRAIN" ForceRun="N" Summarize="N" AdvancedAdvisor="N" RunAction="Train" Component="FileImport" IFileName="C:\Users\User\OneDrive - Universiti Malaya\Y3S1\WIE3007\Assignments\full_data.csv" AccessTable="NoTableName" UserID="NoUserID" Password="NoPassword">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="basket_sales_value" AttributeName="ROLE" AttributeValue="TARGET"/>
+<DELTA Variable="household_kid_category_desc" AttributeName="ROLE" AttributeValue="ID"/>
+</EmVariableAttributes>
+<EmTargetAttributes/>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<VARIABLESETDELTA Type="EXTERNAL" Extension="txt">
+<Data><![CDATA[
+if NAME=&quot;basket_sales_value&quot; then do;
+ROLE=&quot;TARGET&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+if NAME=&quot;household_kid_category_desc&quot; then do;
+ROLE=&quot;ID&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+]]>
+</Data>
+</VARIABLESETDELTA>
+<DELTACODE Type="EXTERNAL" Extension="txt">
+<Data><![CDATA[
+if NAME=&quot;basket_sales_value&quot; then do;
+ROLE=&quot;TARGET&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+end;
+if NAME=&quot;household_kid_category_desc&quot; then do;
+ROLE=&quot;ID&quot;;
+LEVEL=&quot;NOMINAL&quot;;
+ORDER=&quot;&quot;;
+end;
+drop DROP;
+]]>
+</Data>
+</DELTACODE>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMASSMT.ASSESS.CLASS" COMPONENT="ModelCompare" ID="MdlComp" X="1014" Y="296" DESCRIPTION="Model Comparison" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="ASSESS" TOOLPREFIX="MdlComp">
+<PROPERTIES NumberOfReportedLevels="1E-6" NormalizeReportingVariables="Y" DecileBin="20" LiftEpsilon="1E-6" ProfitEpsilon="1E-6" RoiEpsilon="1E-6" ScoreDistBin="20" RocChart="Y" RocEpsilon="0.01" AssessAllTargetLevels="N" SelectionData="DEFAULT" HPCriteria="DEFAULT" intervalViyaCriteria="DEFAULT" classViyaCriteria="DEFAULT" SelectionTable="VALIDATE" SelectionCriteria="_ASE_" SelectionDepth="10" NumberofBins="20" RecomputeAssess="N" TargetName="basket_sales_value" ModelId="Boost" ModelDescription="Boosting - Best Fit" ModelCriteria="Valid: Average Squared Error" ForceRun="N" RunAction="Train" Component="ModelCompare" StatisticUsed="_VASE_" TargetLabel="">
+<VariableProperties/>
+<EmVariableAttributes/>
+<EmTargetAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMUTIL.EMMERGE.CLASS" COMPONENT="Merge" ID="Merge" X="304" Y="296" DESCRIPTION="Merge" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="UTILITY" TOOLPREFIX="Merge">
+<PROPERTIES MergeType="MATCH" OverwriteVariables="N" OverwritePredicted="N" OverwriteResidual="N" OverwriteClassification="N" OverwriteAssess="N" OverwriteSegment="N" ForceRun="N" RunAction="Train" Component="Merge">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="household_key" AttributeName="MERGEROLE" AttributeValue="BY"/>
+</EmVariableAttributes>
+<EmTargetAttributes/>
+<EmFileProperties>
+<BYORDER Type="DATA">
+<Data>
+<Obs NAME="household_key" ROLE="INPUT" LEVEL="INTERVAL" TYPE="N" LABEL="" _ORDER_="1"/>
+</Data>
+<Metadata>
+<Variable NAME="NAME" LABEL="Variable Name" LENGTH="64" FORMAT="" TYPE="C"/>
+<Variable NAME="ROLE" LABEL="Role" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="LEVEL" LABEL="Measurement Level" LENGTH="10" FORMAT="" TYPE="C"/>
+<Variable NAME="TYPE" LABEL="Type" LENGTH="1" FORMAT="" TYPE="C"/>
+<Variable NAME="LABEL" LABEL="Label" LENGTH="200" FORMAT="" TYPE="C"/>
+<Variable NAME="_ORDER_" LABEL="Order" LENGTH="8" FORMAT="" TYPE="N"/>
+</Metadata>
+</BYORDER>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMSAMP.EMDPART.CLASS" COMPONENT="Partition" ID="Part" X="670" Y="296" DESCRIPTION="Data Partition" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="SAMPLE" TOOLPREFIX="Part">
+<PROPERTIES Method="DEFAULT" TrainPct="80" ValidatePct="20" TestPct="0" RandomSeed="12345" OutputType="DATA" IntervalDistribution="Y" ClassDistribution="Y" ForceRun="N" RunAction="Train" Component="Partition">
+<VariableProperties/>
+<EmVariableAttributes/>
+<EmTargetAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+</NODES>
+<CONNECTIONS>
+<CONNECTION FROM="FIMPORT" TO="Merge"/>
+<CONNECTION FROM="Merge" TO="Drop"/>
+<CONNECTION FROM="Drop" TO="Part"/>
+<CONNECTION FROM="Part" TO="Boost2"/>
+<CONNECTION FROM="Part" TO="Boost"/>
+<CONNECTION FROM="Part" TO="Boost3"/>
+<CONNECTION FROM="FIMPORT2" TO="Merge"/>
+<CONNECTION FROM="Boost" TO="MdlComp"/>
+<CONNECTION FROM="Boost3" TO="MdlComp"/>
+<CONNECTION FROM="Boost2" TO="MdlComp"/>
+</CONNECTIONS>
+<NOTES>
+<DATA><![CDATA[
+
+]]>
+</DATA>
+</NOTES>
+</Workspace>
+</_ROOT_>
