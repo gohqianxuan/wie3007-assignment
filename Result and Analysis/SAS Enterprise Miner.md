@@ -77,5 +77,53 @@ The dataset is split into 80% for training and 20% for validation to evaluate mo
 - Configuration: Interval set to Month, Forecast Lead of 6 months, Smooth Outliers enabled, and Best model selection based on Root Mean Square Error.
 
 ## Access
+**Evaluation of Decision Tree**
+- Best-fit Decision Tree outperformed underfit and overfit models.
+- Best-fit model achieved ASE of 20.66 on the validation set, significantly better than underfit (1101.64) and overfit (29.04) models.
+
+Score Rankings Overlay:
+- Max Predicted basket_sales_value compared for different depths of decision trees.
+- Best-fit and overfit models exhibit similar performance patterns.
+
+Score Distribution:
+- Mean Predicted vs. Mean Target values plotted against model score.
+- Best-fit and overfit Decision Tree models show close alignment, accurately predicting basket sales values.
+- Underfit model reveals a significant gap, indicating poor performance.
+
+**Evaluation of Random Forest**
+- Best-fit Random Forest outperformed underfit and overfit models.
+- Best-fit model achieved ASE of 398.20, superior to underfit (2394.06) and overfit (400.28) models.
+
+Score Rankings Overlay:
+- Max Predicted basket_sales_value compared for different depths of random forests.
+- Best-fit model demonstrates superior performance.
+
+Score Distribution:
+- Mean Predicted vs. Mean Target values plotted against model score.
+- Underfit Random Forest displays poor performance, while best-fit and overfit models show similar trends.
+- Best-fit model exhibits smaller gap, indicating better accuracy.
+
+**Evaluation of Gradient Boosting**
+- Best-fit Gradient Boosting outperformed underfit and overfit models.
+- Best-fit model achieved ASE of 118.75, surpassing underfit (1531.46) and overfit (245.52) models.
+
+Score Rankings Overlay:
+- Mean Predicted basket_sales_value compared for different depth values.
+- Best-fit and overfit models exhibit similar patterns.
+
+Score Distribution:
+- Mean Predicted vs. Mean Target values plotted against model score.
+- Underfit model shows less accurate predictions, while best-fit model excels in accuracy.
+
+**Evaluation of Forecasting**
+- Mean Square Error: 134.13, Root Mean Square Error: 11.58145.
+- Lower Mean Square Error indicates better model performance in capturing and predicting time series patterns.
+
+Trend Analysis:
+- Line graph illustrates the forecasted trend of basket_sales_value over a 6-month period.
+- Consistent and regular pattern observed in the trend.
+- Minimum sales in April, increasing thereafter, reaching maximum in March.
+
 
 ## Please Refer To Report For Details
+https://365umedumy-my.sharepoint.com/:b:/g/personal/u2102822_siswa365_um_edu_my/ERT3kxFhScBHlP3ZHIqeSEsBgcBMQnVyras3BJrhVoWR7Q?e=dbgqy3
