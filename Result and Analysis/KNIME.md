@@ -36,3 +36,6 @@ Cluster 1: Target with lower-priced products, family packages.
 Cluster 2: Focus on high-end products, tailor offerings for single individuals.
 
 Heatmap nodes validate clusters using correlation between demographics and clusters.
+
+# Refer to Report for Details and Visualization
+https://365umedumy-my.sharepoint.com/:b:/g/personal/u2102822_siswa365_um_edu_my/ERT3kxFhScBHlP3ZHIqeSEsBgcBMQnVyras3BJrhVoWR7Q?e=oiCQNf
