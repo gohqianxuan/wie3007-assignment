@@ -37,15 +37,27 @@ Integral to the project's success, Talend Data Integration facilitates the seaml
 
 KNIME contributes to the exploratory phase, providing additional capabilities for cluster analysis, particularly employing DBSCAN. Its flexibility allows for the implementation of advanced analytical techniques, complementing the capabilities of SAS Enterprise Miner and enhancing the scope of exploratory data analysis.
 
+### Featuretools
+
+Featuretools is an open-source Python framework for automated feature engineering. It contributes to the "Modify" stage of the SEMMA methodology, as it can automatically create features from the dataset provided to enhance the data for further analysis.
+
 ## Techniques Applied
 
 ### Explore
 
-1. Association Rule Mining
-2. Sequence Analysis
-3. Time Series Clustering
-4. DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+1. Exploratory Data Analysis
+2. Association Rule Mining
+3. Sequence Analysis
+4. Time Series Clustering
+5. DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
 
+### Modify
+
+1. Data Cleaning
+2. Data Integration
+3. Data Transformation
+4. Features Generation
+   
 ### Modeling
 
 1. Decision Trees
