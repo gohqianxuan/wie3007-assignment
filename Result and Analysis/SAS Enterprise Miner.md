@@ -125,5 +125,5 @@ Trend Analysis:
 - Minimum sales in April, increasing thereafter, reaching maximum in March.
 
 
-## Please Refer To Report For Details And Visualization
+# Refer to Report for Details and Visualization
 https://365umedumy-my.sharepoint.com/:b:/g/personal/u2102822_siswa365_um_edu_my/ERT3kxFhScBHlP3ZHIqeSEsBgcBMQnVyras3BJrhVoWR7Q?e=dbgqy3
