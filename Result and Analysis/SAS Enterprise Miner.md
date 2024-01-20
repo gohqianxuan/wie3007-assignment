@@ -1,4 +1,4 @@
-# SA Enterprise Miner
+# SAS Enterprise Miner
 ## Sample
 We use SAS Enterprise Miner's Sample node to randomly select 4% (32 households) from the hh_demographics dataset. The chosen subset ensures a comprehensive analysis while managing computational resources effectively. A Random Seed (420) is set for reproducibility, and the process is documented for transparency and future reference.
 
