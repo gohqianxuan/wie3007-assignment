@@ -1,4 +1,4 @@
-# Data Preprocessing using Talend Data Preparation & Talend Data Integration
+# Data Preprocessing
 Data cleaning and transformation were done using two platforms, *Talend Data Preparation*; a software that provides a graphical interface, allowing users to interact with the data visually and perform suggested transformations through a point-and-click approach, and *Talend Data Integration*; a software that enables users to design data integration jobs using a drag-and-drop approach, making it accessible to users without an extensive technical expertise.
 
 ## Workflow
