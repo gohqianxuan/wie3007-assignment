@@ -1,7 +1,7 @@
 # Data Integration and Feature Engineering
 Data integration was done using *Talend Data Integration*; a software that enables users to design data integration jobs using a drag-and-drop approach, making it accessible to users without extensive technical expertise.
 
-Feature engineering was done manually using Talend Data Integration and automatically using the Featuretools library; a library that aided in generating new features based on aggregation and transformation primitives. 
+Feature engineering was done manually using *Talend Data Integration* and automatically using the *Featuretools library*; a library that aided in generating new features based on aggregation and transformation primitives. 
 
 ## Workflow
 
