@@ -1,4 +1,4 @@
-# Talend Data Preparation
+# Data Preprocessing using Talend Data Preparation & Talend Data Integration
 Data cleaning and transformation were done using Talend Data Preparation - software that provides a graphical interface, allowing users to interact with the data visually and perform suggested transformations through a point-and-click approach.
 
 ## Workflow
@@ -13,7 +13,7 @@ Data cleaning and transformation were done using Talend Data Preparation - softw
 2. **Data Transformation**
 * Created a new discount column by aggregating retail_disc, coupon_disc, and coupon_match_disc columns to get the total discount.
 * Modified the day column format to conform to the ISO 8601 standards for date representation.
-* Merged day and trans_time into a single timestamp column in "yyyy-MM-dd HHmm" format for a consistent and precise temporal analysis. 
+* Merged day and trans_time into a single timestamp column in "yyyy-MM-dd HHmm" format for a consistent and precise temporal analysis using Talend Data Integration as it has date formatting functionalities.
 
 ## Refer to Report for Details and Visualization
 https://365umedumy-my.sharepoint.com/:b:/g/personal/u2102822_siswa365_um_edu_my/ERT3kxFhScBHlP3ZHIqeSEsBgcBMQnVyras3BJrhVoWR7Q?e=oiCQNf
